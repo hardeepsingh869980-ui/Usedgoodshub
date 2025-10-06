@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UsedGoodsHub | Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>UsedGoodsHub Marketplace</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Marketplace</a>
+      <a href="sell.html">Sell</a>
+    </nav>
+  </header>
+
+  <!-- Filters -->
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Search items..." />
+    <select id="categoryFilter">
+      <option value="All">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Furniture">Furniture</option>
+      <option value="Clothes">Clothes</option>
+      <option value="Kitchen Stuff">Kitchen Stuff</option>
+      <option value="Cars">Cars</option>
+      <option value="Bicycle">Bicycle</option>
+      <option value="Watches">Watches</option>
+      <option value="Video Games">Video Games</option>
+      <option value="Gadgets">Gadgets</option>
+    </select>
+    <select id="sortSelect">
+      <option value="newest">Sort by: Newest</option>
+      <option value="priceAsc">Price: Low → High</option>
+      <option value="priceDesc">Price: High → Low</option>
+      <option value="ratingDesc">Rating: High → Low</option>
+    </select>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="product-grid"></div>
+
+  <!-- Pagination -->
+  <div id="pagination" class="pagination"></div>
+
+  <!-- Buy Now Modal -->
+  <div id="buyModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalName"></h3>
+      <div id="modalImages" class="modal-images"></div>
+      <p id="modalPrice"></p>
+      <p id="modalRating"></p>
+      <p id="modalDescription"></p>
+      <h4>Contact Seller</h4>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message to seller" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <button class="btn" id="modalCloseBtn">Close</button>
+    </div>
+  </div>
+</body>
+</html>
