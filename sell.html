@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Item | UsedGoodsHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Sell Your Item</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Marketplace</a>
+      <a href="sell.html" class="active">Sell</a>
+    </nav>
+  </header>
+
+  <form id="sellForm">
+    <input type="text" id="itemName" placeholder="Item Name" required />
+    <input type="number" id="itemPrice" placeholder="Price" required />
+    <input type="text" id="itemCategory" placeholder="Category" required />
+    <input type="text" id="itemRating" placeholder="Rating (1-5)" required />
+    <textarea id="itemDescription" placeholder="Short Description" required></textarea>
+    <input type="text" id="itemImages" placeholder="Image URLs (comma separated)" required />
+    <button type="submit" class="btn">Submit Item</button>
+  </form>
+</body>
+</html>
